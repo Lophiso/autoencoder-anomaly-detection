@@ -37,8 +37,5 @@ python src/simulate_attack.py
 python src/test.py
 ```
 
-## Cloud Hosting (coming soon)
-- Deployment scripts for AWS/GCP/Azure
-
 ## Authors
-- [Your Name]
+- Lophiso Feleke Shomoro
