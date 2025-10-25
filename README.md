@@ -37,5 +37,5 @@ python src/simulate_attack.py
 python src/test.py
 ```
 
-## Authors
+## Author
 - Lophiso Feleke Shomoro
