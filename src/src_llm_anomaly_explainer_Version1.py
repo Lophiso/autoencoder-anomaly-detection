@@ -3,7 +3,7 @@ LLM-Powered Anomaly Explanation Agent
 
 Demonstrates how to combine a trained anomaly detection pipeline with an LLM
 (via OpenAI-compatible API) to automatically generate human-readable explanations
-of detected anomalies — a skill directly applicable to legal document analysis.
+of detected anomalies.
 
 This bridges the gap between data pipelines and AI agent development.
 
