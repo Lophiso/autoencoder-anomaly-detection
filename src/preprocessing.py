@@ -5,12 +5,13 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from pathlib import Path
 
-# Default: look for data in project root /data directory
-DEFAULT_DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "filtered_sensor_data.csv"
+try:
+    from src.config import DATA_PATH
+except ImportError:
+    from config import DATA_PATH
 
-def load_data(path=None):
+def load_data(path=DATA_PATH):
     """Load sensor data from csv file."""
-    path = path or DEFAULT_DATA_PATH
     if not os.path.exists(path):
         raise FileNotFoundError(f"Data file not found at {path}. See data/README.md for download instructions.")
     df = pd.read_csv(path)
